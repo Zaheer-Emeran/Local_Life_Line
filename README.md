@@ -2,7 +2,7 @@
 ## Photo Editing Shit
 https://www.photopea.com
 ## Icons
-https://www.freepik.com/icons/person
+https://www.freepik.com/icons/person <br>
 https://www.vecteezy.com/free-vector/red-panda
 ## Colours
 mycolor.space
