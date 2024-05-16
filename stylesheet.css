@@ -5,7 +5,17 @@
     height: 15vw;
 }
 
-  
+.container {
+    position: relative;
+  }
+.center {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
