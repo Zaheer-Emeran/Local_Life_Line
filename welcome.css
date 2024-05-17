@@ -3,7 +3,7 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .main{
     width: 100%;
@@ -70,12 +70,12 @@
 }
 .content h1{
     font-size: 45px;
-    color: #fff;
+    color: #140808;
     font-weight: 400;
 }
 .content p{
     font: size 16px;
-    color: #fff;
+    color: #2f5844;
 }
 
 .button{
