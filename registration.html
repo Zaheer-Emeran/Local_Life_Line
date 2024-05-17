@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="stylesReg.css">
+    <script type="module" src="register.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,31 +15,31 @@
             <div class="user-details">
               <div class="input-box">
                 <span class="details">Full Name</span>
-                <input type="text" placeholder="Enter your name" required>
+                <input type="name" placeholder="Enter your name" id="name" required>
               </div>
               <div class="input-box">
                 <span class="details">Username</span>
-                <input type="text" placeholder="Enter your username" required>
+                <input type="username" placeholder="Enter your username" id="username" required>
               </div>
               <div class="input-box">
                 <span class="details">Age</span>
-                <input type="text" placeholder="Enter your age" required>
+                <input type="age" placeholder="Enter your age" id="age" required>
               </div>
               <div class="input-box">
                 <span class="details">Email</span>
-                <input type="text" placeholder="Enter your email" required>
+                <input type="email" placeholder="Enter your email" id="email" required>
               </div>
               <div class="input-box">
                 <span class="details">Phone Number</span>
-                <input type="text" placeholder="Enter your number" required>
+                <input type="phone" placeholder="Enter your number" id="phone" required>
               </div>
               <div class="input-box">
                 <span class="details">Password</span>
-                <input type="text" placeholder="Enter your password" required>
+                <input type="password" placeholder="Enter your password" id="password" required>
               </div>
               <div class="input-box">
                 <span class="details">Address</span>
-                <input type="text" placeholder="Enter your Address" required>
+                <input type="address" placeholder="Enter your Address" id="address" required>
               </div>
             </div>
             <div class="gender-details">
@@ -62,7 +63,7 @@
               </div>
             </div>
             <div class="button">
-              <input type="submit" value="Register">
+              <input type="submit" value="Register" id="register">
             </div>
             <div class="log">
               <h4>Already have and account? <a href="Login.html">Sign in!</a></h4>
