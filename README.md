@@ -14,6 +14,14 @@ https://www.vecteezy.com/free-vector/red-panda
 mycolor.space
 Light purple: #9b59b6
 
+Green =  C7E20B
+Black = 000000
+Blue = 0FB5CE
+white = FFFFFF
+Red/pink = C60076
+Yellow = F7BC07
+Orange = FF9900
+
 ## Photos
 
 Pexels
