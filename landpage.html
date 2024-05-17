@@ -1,29 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamburger Menu</title>
-  <link rel="stylesheet" href="/Project_Assets/landingStyles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.cdnfonts.com/css/helvetica-255" rel="stylesheet">
+<title>Landing Page</title>
+<style>
+header, #headerLogo {
+    height: 30vw;
+}
+.headerImage {
+    background-color: black;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+} 
+.heading {
+    position: absolute; 
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family: 'Helvetica';
+    font-size: 10vh;
+    text-shadow: 3px 4px 7px black;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+}
+#logo {
+    position: relative;
+    margin-top: 1vw;
+    width: 20vw; /* Adjust width as needed */
+    height: 20vw; /* Maintain aspect ratio */
+}
+@import url("@import url('https://fonts.cdnfonts.com/css/helvetica-255')");
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 50px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 30vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  background-color: white;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #0e2431;
+}
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+.content{
+    text-align: center;
+}
+h1 {
+    margin-top: 6vh;
+    text-align: center;
+}
+.tabs {
+    color: white;
+    margin-top: 2vh;
+    margin-left: 0.5vw;
+    float: left;
+    background-color: #0FB5CE;
+    height: 30vh;
+    width: 97vw;
+    padding-top: 3vw;
+    padding-left: 5vw;
+}
+a {
+    color: white; 
+    text-decoration: none;
+}
+.cityLogo {
+    height: 28vh;
+    width: 70vw;
+}
+.copyright {
+    text-align: center;
+    background-color: #0FB5CE;
+    color: white; 
+}
+</style>
 </head>
 <body>
-    <div class="header">
-        <img src="Images/pexels-alexander-suhorucov-6457563.jpg" alt="table_mountain" height="20%", width="100%">
+    <div class="header" style="position: relative; text-align: center; color: white;">
+        <div class="headerImage">
+            <img id="headerLogo" src="/Project_Assets/pexels-pixabay-259447.jpg" alt="A view of Table Mountain" style="width:100%;">
+        </div>
+        <h1 class="heading">LocalLifeLine</h1>
     </div>
-    <div class="logo">
-        <img src="Images/tmp_Loogoo.png" alt="LLLLogo" id="logo" height="100%", width="100%">
+    <nav class="navbar" style="position: absolute; top: 0; left: 0; padding: 10px;">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="menu-items">
+                <li><a href="landpage.html">Home</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+                <li><a href="#">Settings</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+            <p> 
+            <b><h2>LocalLifeLine:</b> Helping You Protect Tomorrow</h2> <br>
+            Welcome to LocalLifeLine, your trusted source for community updates, alerts, and vital information. Developed by the City of Cape Town, our mission is to foster user engagement and enhance safety across local neighborhoods.</p>
+            <p>
+            <b>What We Offer:</b> <br>
+            - Real-Time Alerts: Stay informed about emergencies, weather events, and local incidents. Receive timely notifications directly to your device. <br>
+            - Community News: Access the latest news relevant to your area. From community events to development projects, we’ve got you covered. <br>
+            - Statistics and Insights: Explore data-driven insights on crime rates, health trends, and community well-being. Make informed decisions to keep your loved ones safe. <br>
+            - Collaboration Hub: Connect with neighbors, local businesses, and civic organizations. Share ideas, organize events, and build a stronger community together.</p> 
+            <p><b>Why Choose LocalLifeLine?</b> <br>
+            - Community-Centric: We prioritize local needs and empower residents to actively participate in community life. <br>
+            - Safety First: Your safety matters to us. We’re committed to providing accurate, up-to-date information that helps prevent risks. <br>
+            - City-Backed: Developed by the City of Cape Town, LocalLifeLine is a reliable resource endorsed by local authorities. <br>
+            Join us today and be part of a safer, more connected community! </p>
     </div>
-    <input type="checkbox" id="menuToggle">
-    <label for="menuToggle">&#9776;</label>
-    <ul id="menu">
-        <li><a href="landpage.html">Home</a></li>
-        <li><a href="Login.html">Login/Register</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Rate Us</a></li>
-    </ul>
-
-    <h1>LocalLifeLine</h1>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 </body>
+<footer>
+    <div class="footerContainer">
+        <div class="tabs">
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Contact Information</a></p>
+            <p><a href="#">Social Media</a></p>
+        </div>
+        <div class="copyright">
+            <h3> &#169 Copyright - RedSonic</h3>
+        </div>
+        <!-- <div class="cityLogo">
+            <img src="/Project_Assets/capetown-city-logo.jpg" alt="City of Cape Town Logo" style="height: 100%; width: 100%;">
+        </div> -->
+    </div>
+</footer>
 </html>
