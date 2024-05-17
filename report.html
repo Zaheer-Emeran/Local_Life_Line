@@ -4,19 +4,33 @@
     <link href="https://fonts.cdnfonts.com/css/helvetica-255" rel="stylesheet">
 
     <style>
-        p { font-size: 30px;}
-        h1 { text-align: center;}
+        p { font-size: 25px;}
+        h1 { text-align: center;
+            font-size: 35px;}
         button:hover {transform: scale(1.1);}
         fieldset {text-align: center; border: none;}
         .radio-input {display: inline-block; vertical-align: top;}
         fieldset {text-align: center; justify-items:center;}
-        .two-column {display: grid;
+        .four-column {display: grid;
                     grid-template-columns: auto auto auto auto;
                     gap: 10px;
                     padding: 10px;}
-        .two-column label {
+        .four-column label {
             text-align: left;
         }
+        .two-column {
+            display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 10px;
+                    padding: 10px;
+                    text-align: center;
+        }
+
+        .two-column div{
+            border:solid 2px #e0e0e0;
+            border-radius: 10px;
+        }
+
 
     </style>
 </head>    
@@ -28,14 +42,24 @@
 <div style="background-color: white;  padding: 20px; margin:20px;">
 <h1>Local Police Station Feedback</h1>
 
-<p>The Salt River community rates their sense of safety in their community <span style="font-size:35px; color:#C60076; font-weight: bolder;">4/10</span></p>
-<img src="Images/half donut.png" style="width:200px; float:left"><p style="padding-top: 30px;"><span style="font-size:35px; color:#C60076; font-weight: bolder;">65%</span> of respondents say they trust the police.</p>
-<p>Police urgency is rated <span style="font-size:35px; color:#C60076; font-weight: bolder;">6/10</span> by the community.</p>
-<p>Based on public opinion, these are the most prevelant crimes in Salt River</p>
-<div style="text-align: center;">
-<img style="height:80vh" src="Images/type of crime.png">
+<div class="two-column">
+<div>
+<img src="/Images/half donut.png" style="width:300px;"><p><span style="font-size:35px; color:#C60076; font-weight: bolder;">65%</span> of respondents say they trust the police.</p>
 </div>
+<div>
+    <p>The Salt River community rates their sense of safety in their community <span style="font-size:35px; color:#C60076; font-weight: bolder;">4/10</span></p>
+    </div>    
+<div>
+<p>Police urgency is rated <span style="font-size:35px; color:#C60076; font-weight: bolder;">6/10</span> by the community.</p>
+</div>
+<div style="grid-row: 2 / 4;">
+<p>Based on public opinion, these are the most prevelant crimes in Salt River</p>
+<img style="height:80vh" src="/Images/type of crime.png">
+</div>
+<div>
 <p>Police visibility is rated <span style="font-size:35px; color:#C60076; font-weight: bolder;">7/10</span> for your area.</p>
+</div>
+</div>
 </div>
 </div>
 
@@ -99,24 +123,23 @@
         <label for="incidence2">No</label>
     </fieldset>
     <p>Which type of crime do you think is most prevalent in your area?</p>
-    <fieldset id="group4">
-        <div class="two-column">
-        <input type="radio" value="type1" name="group5">
+    <fieldset id="group5">
+        <div class="four-column">
+        <input type="checkbox" value="tcrime1" name="group5">
         <label for="tcrime1">Home Break-ins</label> 
-        <input type="radio" value="tcrime2" name="group5">
+        <input type="checkbox" value="tcrime2" name="group5">
         <label for="tcrime2">Car HiJackings</label>
-        <input type="radio" value="tcrime3" name="group5">
+        <input type="checkbox" value="tcrime3" name="group5">
         <label for="tcrime3">Theft</label> 
-        <input type="radio" value="tcrime4" name="group5">
+        <input type="checkbox" value="tcrime4" name="group5">
         <label for="tcrime4">Mugging</label>
-
-        <input type="radio" value="tcrime5" name="group5">
+        <input type="checkbox" value="tcrime5" name="group5">
         <label for="tcrime5">Scamming</label> 
-        <input type="radio" value="tcrime6" name="group5">
+        <input type="checkbox" value="tcrime6" name="group5">
         <label for="tcrime6">Pick-pocketing</label>
-        <input type="radio" value="tcrime7" name="group5">
+        <input type="checkbox" value="tcrime7" name="group5">
         <label for="tcrime7">Murder</label> 
-        <input type="radio" value="tcrime8" name="group5">
+        <input type="checkbox" value="tcrime8" name="group5">
         <label for="tcrime8">Sexual Assualt</label>
         </div>
     </fieldset>
@@ -142,6 +165,10 @@
         <label for="presence9">9</label> 
         <input type="radio" value="presence10" name="group4">
         <label for="presence10">10</label>
+    </fieldset>
+    <p>Do you have any comments regarding your local Police station?</p>
+    <fieldset>
+        <input type="text" style="width: 100%; height: 100px">
     </fieldset>
   </form>
   <br>
