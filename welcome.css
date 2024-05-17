@@ -8,7 +8,7 @@
 .main{
     width: 100%;
     min-height:100vh;
-    background-image:linear-gradient(rgba(0,0,0,65),rgba(0,0,0,65)) url("citi.jpg");
+    background-image:linear-gradient(rgba(0,0,0,65),rgba(0,0,0,65)) url(citi.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -50,7 +50,7 @@
     background-color: #5d5d5d;
 }
 .navbar h1{
-    color: #fff;
+    color: #120606;
     font-size: 35px;
     font-weight: 500;
     text-transform: uppercase;
