@@ -124,14 +124,13 @@
 
 .tabs {
     color: white;
-    margin-top: 2vh;
-    margin-left: 0.5vw;
+    margin-top: 40px;
     float: left;
     background-color: #0FB5CE;
     height: 30vh;
     width: 97vw;
-    padding-top: 3vw;
-    padding-left: 5vw;
+    padding-top: 2px;
+    font-size: 35px;
 }
 a {
     color: white; 
