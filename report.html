@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-255" rel="stylesheet">
 
     <style>
-        body {
-            font-family: 'Helvetica Neue', sans-serif;
+        p { font-size: 25px;}
+        h1 { text-align: center;
+            font-size: 35px;}
+        button:hover {transform: scale(1.1);}
+        fieldset {text-align: center; border: none;}
+        .radio-input {display: inline-block; vertical-align: top;}
+        fieldset {text-align: center; justify-items:center;}
+        .four-column {display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    gap: 10px;
+                    padding: 10px;}
+        .four-column label {
+            text-align: left;
+        }
+        .two-column {
+            display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 10px;
+                    padding: 10px;
+                    text-align: center;
         }
 
-        p { 
-            font-size: 30px;
+        .two-column div{
+            border:solid 2px #e0e0e0;
+            border-radius: 10px;
         }
+
 
     </style>
 </head>    
-<body>
+<body style="font-family: 'Helvetica', sans-serif;">
 <header>
 
 </header>
-
-<div></div>
+<div style="background-color:#FF9900; padding: 20px;">
+<div style="background-color: white;  padding: 20px; margin:20px;">
 <h1>Local Police Station Feedback</h1>
 
-<p>The Salt River community rates their sense of safety in their community 3/5</p>
+<div class="two-column">
+<div>
+<img src="/Images/half donut.png" style="width:300px;"><p><span style="font-size:35px; color:#C60076; font-weight: bolder;">65%</span> of respondents say they trust the police.</p>
+</div>
+<div>
+    <p>The Salt River community rates their sense of safety in their community <span style="font-size:35px; color:#C60076; font-weight: bolder;">4/10</span></p>
+    </div>    
+<div>
+<p>Police urgency is rated <span style="font-size:35px; color:#C60076; font-weight: bolder;">6/10</span> by the community.</p>
+</div>
+<div style="grid-row: 2 / 4;">
+<p>Based on public opinion, these are the most prevelant crimes in Salt River</p>
+<img style="height:80vh" src="/Images/type of crime.png">
+</div>
+<div>
+<p>Police visibility is rated <span style="font-size:35px; color:#C60076; font-weight: bolder;">7/10</span> for your area.</p>
+</div>
+</div>
+</div>
+</div>
 
-<p>65% of respondents say they trust the police.</p>
-<img src="/images/local police trust donut.png" style="width:200px">
-
-<p>Police urgency is rated 4/5 by the community.</p>
-
+<div style="background-color:#0FB5CE; padding: 20px;">
+    <div style="background-color: white;  padding: 20px; margin:20px;">
 <h1>Local Police Station Feedback form</h1>
 
 <p>The City of Cape Town would love to hear your feedback!</p>
-
-
 <form>
     <p>Rate how safe you feel in your area?</p>
     <fieldset id="group1">
@@ -47,6 +81,16 @@
         <label for="safe4">4</label>
         <input type="radio" value="safe5" name="group1">
         <label for="safe5">5</label>
+        <input type="radio" value="safe6" name="group1">
+        <label for="safe6">6</label> 
+        <input type="radio" value="safe7" name="group1">
+        <label for="safe7">7</label>
+        <input type="radio" value="safe8" name="group1">
+        <label for="safe8">8</label>
+        <input type="radio" value="safe9" name="group1">
+        <label for="safe9">9</label>
+        <input type="radio" value="safe10" name="group1">
+        <label for="safe10">10</label>
     </fieldset>
     <p>Rate the urgency of police in your area?</p>
     <fieldset id="group2">
@@ -59,7 +103,17 @@
         <input type="radio" value="urgency4" name="group2">
         <label for="urgency4">4</label>
         <input type="radio" value="urgency5" name="group2">
-        <label for="urgency5">5</label>    
+        <label for="urgency5">5</label>
+        <input type="radio" value="urgency6" name="group2">
+        <label for="urgency6">6</label> 
+        <input type="radio" value="urgency7" name="group2">
+        <label for="urgency7">7</label>
+        <input type="radio" value="urgency8" name="group2">
+        <label for="urgency8">8</label>
+        <input type="radio" value="urgency9" name="group2">
+        <label for="urgency9">9</label>
+        <input type="radio" value="urgency10" name="group2">
+        <label for="urgency10">10</label>    
     </fieldset>
     <p>Do you trust your local police to deal with reported incidents?</p>
     <fieldset id="group3">
@@ -67,9 +121,62 @@
         <label for="incidence1">Yes</label> 
         <input type="radio" value="incidence2" name="group3">
         <label for="incidence2">No</label>
-    
+    </fieldset>
+    <p>Which type of crime do you think is most prevalent in your area?</p>
+    <fieldset id="group5">
+        <div class="four-column">
+        <input type="checkbox" value="tcrime1" name="group5">
+        <label for="tcrime1">Home Break-ins</label> 
+        <input type="checkbox" value="tcrime2" name="group5">
+        <label for="tcrime2">Car HiJackings</label>
+        <input type="checkbox" value="tcrime3" name="group5">
+        <label for="tcrime3">Theft</label> 
+        <input type="checkbox" value="tcrime4" name="group5">
+        <label for="tcrime4">Mugging</label>
+        <input type="checkbox" value="tcrime5" name="group5">
+        <label for="tcrime5">Scamming</label> 
+        <input type="checkbox" value="tcrime6" name="group5">
+        <label for="tcrime6">Pick-pocketing</label>
+        <input type="checkbox" value="tcrime7" name="group5">
+        <label for="tcrime7">Murder</label> 
+        <input type="checkbox" value="tcrime8" name="group5">
+        <label for="tcrime8">Sexual Assualt</label>
+        </div>
+    </fieldset>
+    <p>How visible do you feel police presence is in your area?</p>
+    <fieldset id="group4">
+        <input type="radio" value="presence1" name="group4">
+        <label for="presence1">1</label> 
+        <input type="radio" value="presence2" name="group4">
+        <label for="presence2">2</label>
+        <input type="radio" value="presence3" name="group4">
+        <label for="presence3">3</label> 
+        <input type="radio" value="presence4" name="group4">
+        <label for="presence4">4</label>
+        <input type="radio" value="presence5" name="group4">
+        <label for="presence5">5</label> 
+        <input type="radio" value="presence6" name="group4">
+        <label for="presence6">6</label>
+        <input type="radio" value="presence7" name="group4">
+        <label for="presence7">7</label> 
+        <input type="radio" value="presence8" name="group4">
+        <label for="presence8">8</label>
+        <input type="radio" value="presence9" name="group4">
+        <label for="presence9">9</label> 
+        <input type="radio" value="presence10" name="group4">
+        <label for="presence10">10</label>
+    </fieldset>
+    <p>Do you have any comments regarding your local Police station?</p>
+    <fieldset>
+        <input type="text" style="width: 100%; height: 100px">
+    </fieldset>
   </form>
-
+  <br>
+  <div style="display: flex; justify-content: center;">
+  <button style="border:none; color: white; background-color:#F7BC07; padding:10px">Submit</button>
+</div>
+</div>
+</div>
 <footer>
 
 </footer>
