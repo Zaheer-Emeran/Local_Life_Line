@@ -26,6 +26,16 @@ Orange = FF9900
 
 Pexels
 
+# Footer
+Privacy Policy
+Contact Information
+Social Media Icon
+Email SIgnup
+
+Logo
+
+Copyright
+
 ## Website Shit
 
 ![image](https://github.com/Zaheer-Emeran/Project_Assets/assets/162816701/7e63a8e9-d340-4a4e-be0e-bdb4bc823dda)
