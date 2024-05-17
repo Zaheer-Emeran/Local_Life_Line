@@ -8,10 +8,11 @@
 .main{
     width: 100%;
     min-height:100vh;
-    background-image:linear-gradient(rgba(0,0,0,65),rgba(0,0,0,65)) url(citi.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background: linear-gradient(135deg, #c9e01a, #62b2d2);
+    
 
 }
 .wrapper{
@@ -28,6 +29,12 @@
     position: relative;
     z-index: 1;
 }
+.logo{
+    width: 45px;
+    height: 50px;
+    cursor:pointer;
+
+}
 .navbar ul{
     display: flex;
     justify-content: center;
@@ -36,6 +43,9 @@
 }
 .navbar ul li{
     list-style:none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
 }
 .navbar ul li a{
     padding:10px 18px;
@@ -44,14 +54,27 @@
     font: size 16px;
     color:#fff;
     text-decoration:none ;
+    text-transform: uppercase;
 
 }
-.navbar ul li a:hover{
-    background-color: #5d5d5d;
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #6dbde6;
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
 }
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
 .navbar h1{
-    color: #120606;
-    font-size: 35px;
+    color: #f4f0f0;
+    font-size: 25px;
     font-weight: 500;
     text-transform: uppercase;
     margin-top:10px;
@@ -61,42 +84,45 @@
     width:100%;
     min-height:100vh;
     position: absolute;
-    top:0;
+    top:50%;
     left:0;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transform: translateY(-50%);
 }
 .content h1{
     font-size: 45px;
-    color: #140808;
+    color: #ffffff;
     font-weight: 400;
 }
 .content p{
     font: size 16px;
-    color: #2f5844;
+    color: #010202;
+    font-weight: 100;
+    line-height: 25px;
 }
 
 .button{
     height: 45px;
-    margin: 35px 0;
+    margin: 20px 10px;
 }
 .button input{
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
+    /*height: 100%;*/
+    width: 200%;
+    padding: 15px 0;
+    border-radius: 25px;
+    border:2px solid;
     color: #fff;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: linear-gradient(135deg, #FFB352, #9b59b6);
+    background: linear-gradient(135deg, #fefefe, #b45243);
 }
 
 .button input:hover{
-
-   background: linear-gradient(-135deg, #FFB352, #9b59b6);
+background: linear-gradient(-135deg, #FFB352, #9b59b6);
 }
