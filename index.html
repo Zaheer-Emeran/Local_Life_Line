@@ -16,7 +16,7 @@ header, #headerLogo {
 } 
 .heading {
     position: absolute; 
-    top: 40%; 
+    top: 10%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     font-family: 'Helvetica';
@@ -27,6 +27,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica';
+    width: 100%;
 }
 #logo {
     position: relative;
@@ -65,7 +66,7 @@ body {
   color: #0e2431;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 0.7rem;
+  /* padding: 0.7rem; */
 }
 .nav-container {
   display: block;
@@ -163,23 +164,72 @@ body {
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
 }
+/*Content is the words in the landingPage middle section*/
 .content{
     text-align: center;
-}
-h1 {
-    margin-top: 6vh;
-    text-align: center;
+    width: 55vw;
+    margin-left: 23vw;
 }
 .tabs {
     color: white;
     margin-top: 2vh;
     margin-left: 0.5vw;
     float: left;
-    background-color: #0FB5CE;
     height: 30vh;
-    width: 97vw;
     padding-top: 3vw;
     padding-left: 5vw;
+}
+a {
+    color: white; 
+    text-decoration: none;
+}
+/* .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left {
+    display: flex;
+  }
+
+  .left h3 {
+    margin-right: 20px;
+  }
+
+  .logo {
+    max-width: 100px;
+    height: auto;
+  } */
+/* .footer{
+    background-image: url(/Project_Assets/cpt_loogoo0200-0290.mp6.png);
+}
+.cityLogo {
+    background-color: #0fb5ce;
+    height: 35vh;
+    width: 48vw;
+    padding-left: 50vw;
+    padding-bottom: 24vh;
+}
+.copyright {
+    text-align: center;
+    color: white; 
+    margin-bottom: 19vh;
+}   */
+.tabs {
+    color: white;
+    margin-top: 40px;
+    background-color: #0FB5CE;
+    height: 30vh;
+    width: 92vw;
+    font-size: 30px;
+    padding-bottom: 10vh;
 }
 a {
     color: white; 
@@ -193,19 +243,20 @@ a {
     text-align: center;
     background-color: #0FB5CE;
     color: white; 
+    font-size: 3vh;
 }
 </style>
 </head>
 <body>
     <div class="header" style="position: relative; text-align: center; color: white;">
         <div class="headerImage">
-            <img id="headerLogo" src="Images/pexels-pixabay-259447.jpg" alt="A view of Table Mountain" style="width:100%;">
+            <img id="headerLogo" src="/Project_Assets/Images/pexels-pixabay-259447.jpg" alt="A view of Table Mountain" style="width:100%;">
         </div>
         <h1 class="heading">LocalLifeLine</h1>
     </div>
-    <nav class="navbar" style="position: absolute; top: 0; left: 0; padding: 10px;">
+    <nav class="navbar" style="position: absolute; top: 0; left: 0;">
         <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
+            <input class="checkbox" type="checkbox">
             <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
@@ -221,33 +272,43 @@ a {
     <div class="content">
             <p> 
             <b><h2>LocalLifeLine:</b> Helping You Protect Tomorrow</h2> <br>
-            Welcome to LocalLifeLine, your trusted source for community updates, alerts, and vital information. Developed by the City of Cape Town, our mission is to foster user engagement and enhance safety across local neighborhoods.</p>
+            Welcome to LocalLifeLine, your trusted source for community updates, alerts, and vital information. In collaboration with the City of Cape Town, our mission is to foster user engagement and enhance safety across local neighborhoods.</p>
             <p>
             <b>What We Offer:</b> <br>
-            - Real-Time Alerts: Stay informed about emergencies, weather events, and local incidents. Receive timely notifications directly to your device. <br>
-            - Community News: Access the latest news relevant to your area. From community events to development projects, we’ve got you covered. <br>
-            - Statistics and Insights: Explore data-driven insights on crime rates, health trends, and community well-being. Make informed decisions to keep your loved ones safe. <br>
-            - Collaboration Hub: Connect with neighbors, local businesses, and civic organizations. Share ideas, organize events, and build a stronger community together.</p> 
-            <p><b>Why Choose LocalLifeLine?</b> <br>
-            - Community-Centric: We prioritize local needs and empower residents to actively participate in community life. <br>
-            - Safety First: Your safety matters to us. We’re committed to providing accurate, up-to-date information that helps prevent risks. <br>
-            - City-Backed: Developed by the City of Cape Town, LocalLifeLine is a reliable resource endorsed by local authorities. <br>
-            Join us today and be part of a safer, more connected community! </p>
+            We provide real-time alerts to help communities stay informed about emergencies, weather events, and local incidents. This allows users to receive timely notifications directly to their device.
+            For community news, users will have access the latest news relevant to their area. From community events to development projects, we’ve got you covered. This lets users explore data-driven insights on crime rates, health trends, and community well-being. <br>
+            A collaboration portal is created and offered to help connect with neighbors, local businesses, and civic organizations. Ideas can be shared, events can be organized, and a stronger community can be built.
+            </p> 
+            <p>
+            <b>Why Choose LocalLifeLine?</b> <br>
+            We prioritize local needs and empower residents to actively participate in community life. The safety of the community matters to us. We’re committed to providing accurate, up-to-date information that helps prevent risks. Developed by the City of Cape Town, LocalLifeLine is a reliable resource endorsed by local authorities. Join us today and be part of a safer, more connected community! 
+            </p>
     </div>
 </body>
 <footer>
-    <div class="footerContainer">
-        <div class="tabs">
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Contact Information</a></p>
-            <p><a href="#">Social Media</a></p>
-        </div>
-        <div class="copyright">
-            <h3> &#169 Copyright - RedSonic</h3>
-        </div>
-        <!-- <div class="cityLogo">
-            <img src="/Project_Assets/capetown-city-logo.jpg" alt="City of Cape Town Logo" style="height: 100%; width: 100%;">
-        </div> -->
+  <div class="footerContainer">
+    <div class="tabs">
+        <img src="Images/cpt_loogoo0200-0290.mp6.png" alt="City of Cape Town Logo" style="height: 15vw; width: 15vw; margin-left: 50%; float: inline-end;">
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Contact Information</a></p>
+        <p><a href="#">Social Media</a></p>
     </div>
+    <div class="copyright">
+        <h3> &copy; Copyright - RedSonic</h3>
+    </div>
+</div>
 </footer>
+<!-- <footer>
+    <div class="tabs">
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Contact Information</a></p>
+        <p><a href="#">Social Media</a></p>
+    </div>  
+    <div class="cityLogo">
+        <img src="/Project_Assets/cpt_loogoo0200-0290.mp6.png" alt="City of Cape Town Logo">
+    </div>  
+    <div class="copyright">
+        <h3> &#169 Copyright - RedSonic</h3>
+    </div> 
+</footer>  -->
 </html>
