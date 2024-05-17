@@ -2,7 +2,7 @@
 Link: https://local-life-line.netlify.app/
 
 
-## Photo Editing Shit
+## Photo Editing Stuff
 https://www.photopea.com
 ## Icons
 https://www.freepik.com/icons/person <br>
