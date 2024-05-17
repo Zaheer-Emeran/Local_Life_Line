@@ -30,7 +30,7 @@ loginButton.addEventListener("click", function(event){
             // Sign in successful
             const user = userCredential.user;
             alert("Logged in successfully!");
-            window.location.href = "landpage.html"
+            window.location.href = "dashboard.html"
         })
         .catch((error) => {
             // Handle errors

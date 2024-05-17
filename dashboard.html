@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="nav.css">
 </head>
 <header>
     
@@ -16,10 +17,19 @@
         <div class = "wrapper">
             <nav class = "navbar">
                 <img src="/Images/tmp_Loogoo.png" class="logo">
-                <ul>
-                    <li><a href = "#">Profile</a></li>
-                    <li><a href = "#">Settings</a></li>
-                </ul>
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="menu-items">
+                        <li><a href="landpage.html">Home</a></li>
+                        <li><a href="login.html">Login/Register</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </div>
+                </div>
             </nav>
             <div class="content">
                 <h1>Welcome to Local Life line!</h1>
@@ -114,21 +124,18 @@
 
 </body>
 <footer>
-  
-    <div style="height: 15vw; width: 15vw; float: right;">
-        <img class="logo" src="Images/tmp_Loogoo.png" alt="Logo">
+    <div class="footerContainer">
+        <div class="tabs">
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Contact Information</a></p>
+            <p><a href="#">Social Media</a></p>
+        </div>
+        <div class="copyright">
+            <h3> &#169 Copyright - RedSonic</h3>
+        </div>
+        <!-- <div class="cityLogo">
+            <img src="/Project_Assets/capetown-city-logo.jpg" alt="City of Cape Town Logo" style="height: 100%; width: 100%;">
+        </div> -->
     </div>
-    
-    <div style="height: auto; width: 20vw; padding-top: 3vw;">
-        <h1>privacy policy</h1>
-        <h1>contact Information</h1>
-        <h1>Social Media Icons</h1>
-        <h1>Email Signup</h1>
-    </div>
-    <div></div>
-    <div style="width: 20vw;margin-left: 40%; text-align: center; padding-top: 3vw; ">
-        <h1>&copy;Copyright 2024 WebsiteHoster.com</h1>
-    </div>
-
 </footer>
 </html>
